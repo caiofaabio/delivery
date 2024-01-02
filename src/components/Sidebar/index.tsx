@@ -1,4 +1,5 @@
 import { Container } from "./styles"
+import { NavLink } from "react-router-dom"
 
 import { ReactComponent as BurguerIcon } from '../../assets/burger.svg'
 import { ReactComponent as PizzaIcon } from '../../assets/pizza.svg'
@@ -25,28 +26,28 @@ export default function Sidebar() {
       <nav>
         <ul>
           <li>
-            <a href="#" className="active">
+            <NavLink  to="/">
               <BurguerIcon />
               <span>Hambúrguer</span>
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#">
+            <NavLink to="/pizzas">
               <PizzaIcon />
               <span>Pizzas</span>
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#">
+            <NavLink to="/drinks">
               <SodaPopIcon />
               <span>Bebidas</span>
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#">
+            <NavLink to="ice-cream">
               <IceCreamIcon />
               <span>Sobremesas</span>
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>
