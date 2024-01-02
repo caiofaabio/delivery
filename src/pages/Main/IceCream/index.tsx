@@ -1,5 +1,11 @@
+import Head from "../../../components/Head";
+import SnackTitle from "../../../components/SnackTitle";
+
 export default function IceCream() {
   return (
-    <h1>IceCream</h1>
+    <>
+      <Head title='Sorvetes' description='Sua página de Hamburguers' />
+      <SnackTitle>Sorvetes</SnackTitle>
+    </>
   )
 }
