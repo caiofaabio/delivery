@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Container = styled.main`
   width: 100%;
   min-height: 100vh;
-
   display: flex;
 
   > section {
@@ -15,7 +14,7 @@ export const Container = styled.main`
 
     img{
       width: 10rem;
-      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
 
     @media (max-width: 720px) {

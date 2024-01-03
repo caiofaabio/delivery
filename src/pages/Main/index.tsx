@@ -8,9 +8,8 @@ export default function Main() {
   return (
     <Container>
       <Sidebar />
-
       <section>
-        <img src={logoImg} alt="logo" />
+        <img src={logoImg} />
         <Outlet />
       </section>
 
