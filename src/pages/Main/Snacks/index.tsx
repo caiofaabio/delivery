@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+
 import CurrencyFormat from "../../../utils";
 import SkeletonSnack from "./SkeletonSnack";
 import { Container } from "./style"
