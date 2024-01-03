@@ -2,7 +2,7 @@
 import Head from "../../../components/Head";
 import SnackTitle from "../../../components/SnackTitle";
 import Snacks from "../Snacks";
-import { useSnack } from "../../../Hoocks/useSnack";
+import { useSnack } from "../../../Hooks/useSnack";
 
 export default function IceCream() {
   const {iceCream} = useSnack()
