@@ -31,25 +31,20 @@ export default function SnackProvider({ children }: SnackProvider) {
 
         const request = [burgerRequest, drinksRequest, iceCreamRequest, pizzasRequest]
 
-        const [
-          { data: burgerResponse },
-          { data: pizzaResponse },
-          { data: drinkResponse },
-          { data: iceCreamResponse },
-        ] = await Promise.all(request)
 
-        setBugers(burgerResponse)
-        setDrinks(drinkResponse)
-        setIceCream(iceCreamResponse)
-        setPizzas(pizzaResponse)
+        setBugers(request[0].data)
+        setDrinks(request[1].data)
+        setIceCream(request[2].data)
+        setPizzas(request[3].data)
       } catch (error) {
         console.error(error)
       }
     })()
   }, [])
 
+
   return (
-    <SnackContext.Provider value={{ burgers, drinks, iceCream, pizzas }}>
+    <SnackContext.Provider value={{ burgers,pizzas, drinks, iceCream  }}>
       {children}
     </SnackContext.Provider>
   )

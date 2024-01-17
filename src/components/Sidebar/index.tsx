@@ -44,7 +44,7 @@ export default function Sidebar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="ice-cream">
+            <NavLink to="/ice-cream">
               <IceCreamIcon />
               <span>Sobremesas</span>
             </NavLink>

@@ -9,6 +9,7 @@ export default function Pizzas (){
   const { pizzas } = useSnack()
 
 
+
   return (
     <>
       <Head title='Pizzas' description='Sua página de Hamburguers' />
